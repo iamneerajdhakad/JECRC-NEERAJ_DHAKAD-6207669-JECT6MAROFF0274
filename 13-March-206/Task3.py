@@ -25,7 +25,7 @@ driver.find_element(By.CSS_SELECTOR,'a[id="nav-cart"]')
 print("Sub-Task 4 Successfully Executed!!")
 
 # 5. Locate the "Sign in" link in the navigation bar (It might be inside a div with an ID like nav-tools. Use descendant way (space)).
-driver.find_element(By.CSS_SELECTOR,'#nav-tools')
+driver.find_element(By.CSS_SELECTOR,'div[id="nav-tools"] a[data-nav-role="signin"]')
 print("Sub-Task 5 Successfully Executed!!")
 
 # 6. Locate all the main category links in the navigation bar under "All"(e.g."Best Sellers", "Mobiles", "Today's Deals").
