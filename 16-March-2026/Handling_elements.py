@@ -34,21 +34,36 @@ for gender in genders:
     gender.click()
     sleep(2)
 
-check_boxs = driver.find_elements(By.XPATH,'//input[@type="checkbox"]')
-check_boxs = check_boxs[:7]
-days = driver.find_elements(By.XPATH,'//label[@class="form-check-label"]')
-i=2
+# check_boxs = driver.find_elements(By.XPATH,'//input[@type="checkbox"]')
+# check_boxs = check_boxs[:7]
+# days = driver.find_elements(By.XPATH,'//label[@class="form-check-label"]')
+# i=2
+#
+# for check_box in check_boxs:
+#     check_box.click()
+#     print(days[i].text)
+#     i+=1
+#     sleep(1)
+#     if(i==9):
+#         break
+#
+#
+# check_boxs = check_boxs[::-1]
+# for check_box in check_boxs:
+#     check_box.click()
+#     sleep(1)
 
-for check_box in check_boxs:
-    check_box.click()
-    print(days[i].text)
-    i+=1
+check_boxes = driver.find_elements(By.XPATH,'//label[text()="Days:"]/following-sibling::div/input')
+days = driver.find_elements(By.XPATH,'//label[text()="Days:"]/following-sibling::div/label')
+
+for i in range(0,7):
+    check_boxes[i].click()
+    print(f'Day Checked : {days[i].text}')
     sleep(1)
-    if(i==9):
-        break
 
-check_boxs = check_boxs[::-1]
-for check_box in check_boxs:
+check_boxes = check_boxes[::-1]
+
+for check_box in check_boxes:
     check_box.click()
     sleep(1)
 
