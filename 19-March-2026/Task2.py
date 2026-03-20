@@ -24,8 +24,8 @@ email.send_keys('HelloWorld@gmail.com')
 phone_no = wait.until(EC.visibility_of_element_located((By.ID,'tel')))
 phone_no.send_keys('1234567890')
 
-phone_no = wait.until(EC.visibility_of_element_located((By.XPATH,'//input[@type="file"]')))
-phone_no.send_keys(r'C:\Movies\na\54669.jpg')
+upload_button = wait.until(EC.visibility_of_element_located((By.XPATH,'//input[@type="file"]')))
+upload_button.send_keys(r'C:\Movies\na\54669.jpg')
 
 gender_drop_down = wait.until(EC.visibility_of_element_located((By.XPATH,'//select[@name="sgender"]')))
 select_gender = Select(gender_drop_down)
