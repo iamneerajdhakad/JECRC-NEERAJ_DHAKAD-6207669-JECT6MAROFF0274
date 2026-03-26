@@ -26,9 +26,10 @@ driver.execute_script('window.scrollBy(0,500);')
 sleep(2)
 driver.execute_script('window.scrollBy(0,-200);')
 sleep(5)
-element = driver.find_element(By.XPATH,'//div[contains(text(),"Join Pinterest")]')
+element = driver.find_element(By.XPATH,'(//div[@class="WuRgKB eMU5i5 o5UlW_ hL1e7w"])[2]')
 driver.execute_script('arguments[0].scrollIntoView();',element)
 sleep(5)
-
-driver.execute_script('arguments[0].click();',element)
+driver.execute_script("arguments[0].style.border='3px solid red'", element)
+driver.execute_script("arguments[0].remove();", element)
+# driver.execute_script('arguments[0].click();',element)
 
