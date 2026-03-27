@@ -1,0 +1,34 @@
+1774603504968	geckodriver	INFO	Listening on 127.0.0.1:59495
+1774603508163	mozrunner::runner	INFO	Running command: "C:\\Users\\neera\\.cache\\selenium\\firefox\\win64\\149.0\\firefox.exe" "--marionette" "--remote-debugging- ... 6" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\neera\\AppData\\Local\\Temp\\rust_mozprofileWQ1Ggl"
+Dynamically enable window occlusion 0
+1774603508760	Marionette	INFO	Marionette enabled
+1774603508927	Marionette	INFO	Listening on port 59506
+WebDriver BiDi listening on ws://127.0.0.1:59496
+Read port: 59506
+1774603509093	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: "Experiment visual-card-updates has unknown featureId: newtabRefinedCardsLayout"
+JavaScript error: , line 0: SyntaxError: JSON.parse: expected double-quoted property name at line 1 column 153 of the JSON data
+JavaScript error: , line 0: SyntaxError: JSON.parse: expected double-quoted property name at line 1 column 153 of the JSON data
+JavaScript error: , line 0: SyntaxError: JSON.parse: expected double-quoted property name at line 1 column 153 of the JSON data
+JavaScript error: , line 0: SyntaxError: JSON.parse: expected double-quoted property name at line 1 column 153 of the JSON data
+JavaScript error: , line 0: SyntaxError: JSON.parse: expected double-quoted property name at line 1 column 153 of the JSON data
+1774603516391	Marionette	INFO	Stopped listening on port 59506
+console.error: AboutNewTabResourceMapping: "train-hop add-on install failure: Error: Unexpected download cancelled while downloading xpi from https://archive.mozilla.org/pub/system-addons/newtab/newtab-150.1.0-build1/newtab.xpi"
+JavaScript warning: https://sdk.kleekr.com/mediation/native.js?t=492945, line 1: unreachable code after return statement
+Dynamically enable window occlusion 1
+JavaScript warning: https://ep1.adtrafficquality.google/bg/EOVqvXhKFcos_YQFe5huuVzo6NcForoxS9zD6hTGG0k.js line 2 > eval line 6457 > eval line 1 > eval line 1 > eval, line 1: Script terminated by timeout at:
+G@https://ep1.adtrafficquality.google/bg/EOVqvXhKFcos_YQFe5huuVzo6NcForoxS9zD6hTGG0k.js line 2 > eval line 6457 > eval line 1 > eval line 1 > eval:1:24
+@https://ep1.adtrafficquality.google/bg/EOVqvXhKFcos_YQFe5huuVzo6NcForoxS9zD6hTGG0k.js line 2 > eval line 6457 > eval line 1 > eval line 1 > eval:1:126
+Pb@https://ep1.adtrafficquality.google/bg/EOVqvXhKFcos_YQFe5huuVzo6NcForoxS9zD6hTGG0k.js line 2 > eval line 6457 > eval line 1 > eval line 1 > eval:1:198
+Yj@https://ep1.adtrafficquality.google/bg/EOVqvXhKFcos_YQFe5huuVzo6NcForoxS9zD6hTGG0k.js line 2 > eval line 6457 > eval line 1 > eval line 1 > eval:1:45
+F.K</<@https://ep1.adtrafficquality.google/bg/EOVqvXhKFcos_YQFe5huuVzo6NcForoxS9zD6hTGG0k.js line 2 > eval:6457:52978
+wH@https://ep1.adtrafficquality.google/bg/EOVqvXhKFcos_YQFe5huuVzo6NcForoxS9zD6hTGG0k.js line 2 > eval:6457:21271
+Y8@https://ep1.adtrafficquality.google/bg/EOVqvXhKFcos_YQFe5huuVzo6NcForoxS9zD6hTGG0k.js line 2 > eval:6457:6375
+n@https://ep1.adtrafficquality.google/bg/EOVqvXhKFcos_YQFe5huuVzo6NcForoxS9zD6hTGG0k.js line 2 > eval:6457:10026
+Y8/<@https://ep1.adtrafficquality.google/bg/EOVqvXhKFcos_YQFe5huuVzo6NcForoxS9zD6hTGG0k.js line 2 > eval:6457:6809
+lE</<@https://ep1.adtrafficquality.google/bg/EOVqvXhKFcos_YQFe5huuVzo6NcForoxS9zD6hTGG0k.js line 2 > eval:6457:50763
+
+console.error: Translations: "Failed to run language detection." (new AbortError("Actor 'Translations' destroyed before query 'Translations:GetDocumentElementLang' was resolved", (void 0)))
+console.warn: TopSitesFeed: Failed to fetch data from MARS server: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.

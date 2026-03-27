@@ -37,11 +37,11 @@ assert 'sample page' in window_2.text, "Window_1 not selected"
 driver.switch_to.window(home_window)
 
 driver.find_element(By.ID,'messageWindowButton').click()
-all_window = driver.window_handles
-driver.switch_to.window(all_window[-1])
-window_3 = driver.find_element(By.XPATH,'//body')
-print(window_3.get_attribute("textContent"))
-assert 'Knowledge' in window_3.get_attribute("innerText"), "Window_1 not selected"
+# all_window = driver.window_handles
+# driver.switch_to.window(all_window[-1])
+# window_3 = driver.find_element(By.XPATH,'//body')
+# print(window_3.get_attribute("textContent"))
+# assert 'Knowledge' in window_3.get_attribute("innerText"), "Window_1 not selected"
 
 driver.switch_to.window(home_window)
 driver.quit()

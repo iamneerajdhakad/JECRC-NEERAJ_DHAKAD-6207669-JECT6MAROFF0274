@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.13.3 on win32)" generated="2026-03-27T15:51:28.699358" rpa="false" schemaversion="5">
+<suite id="s1" name="Action Chains" source="C:\Python\Testing\Selenium_Framework\27-March-2026\action_chains.robot">
+<test id="s1-t1" name="Handling Scroll To Element" line="28">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-27T15:51:28.897073" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/'.</msg>
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-27T15:51:28.896563" elapsed="4.752605"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-03-27T15:51:33.649795" elapsed="0.035034"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-27T15:51:34.686139" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-27T15:51:33.685451" elapsed="1.001054"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>xpath=//a[text()="Typos"]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-03-27T15:51:34.687081" elapsed="0.350287"/>
+</kw>
+<status status="PASS" start="2026-03-27T15:51:28.894304" elapsed="6.143458"/>
+</test>
+<doc>action chain</doc>
+<status status="PASS" start="2026-03-27T15:51:28.701174" elapsed="6.337281"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Action Chains" id="s1" pass="1" fail="0" skip="0">Action Chains</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
