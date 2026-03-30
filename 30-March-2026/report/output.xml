@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.13.3 on win32)" generated="2026-03-30T16:13:55.480282" rpa="false" schemaversion="5">
+<suite id="s1" name="Task3" source="C:\Python\Testing\Selenium_Framework\30-March-2026\Task3.robot">
+<test id="s1-t1" name="Amazon Task" line="8">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-30T16:13:55.672372" level="INFO">Opening browser 'chrome' to base url 'https://www.amazon.in/'.</msg>
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-30T16:13:55.672036" elapsed="3.604506"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-03-30T16:13:59.277201" elapsed="0.069689"/>
+</kw>
+<kw name="Wait Until Location Contains" owner="SeleniumLibrary">
+<arg>amazon</arg>
+<doc>Waits until the current URL contains ``expected``.</doc>
+<status status="PASS" start="2026-03-30T16:13:59.347541" elapsed="0.008828"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//a[contains(text(),"Electronics")]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-03-30T16:13:59.356853" elapsed="2.538656"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-03-30T16:14:01.896200" level="INFO">Clicking element 'xpath=//a[contains(text(),"Electronics")]'.</msg>
+<arg>xpath=//a[contains(text(),"Electronics")]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-30T16:14:01.895894" elapsed="2.060711"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>id=p_123-title</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-03-30T16:14:03.957053" elapsed="0.319765"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-03-30T16:14:04.277739" level="INFO">Clicking element 'xpath=//input[@aria-labelledby="boAt"]/following::i'.</msg>
+<arg>xpath=//input[@aria-labelledby="boAt"]/following::i</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-30T16:14:04.277371" elapsed="2.020397"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//div[@role="listitem"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-03-30T16:14:06.298189" elapsed="0.165756"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2026-03-30T16:14:06.519352" level="INFO">${product_name} = Woschmann Diamond Car Android SystemTouch Screen 10.1 Inch|TS30|With Fan|4GB/64GB|4th Gen|4Core|QLED Display|GPS&amp;Bluetooth|WiFi&amp;FM|SteeringControl|AHD Camera Included(Wireless Android Auto &amp; Car Play)</msg>
+<var>${product_name}</var>
+<arg>xpath=//div[@role="listitem"]/descendant::div[@data-cy="title-recipe"]/descendant::h2/span</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-30T16:14:06.464342" elapsed="0.055057"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-03-30T16:14:06.520065" level="INFO">Clicking element 'xpath=//div[@role="listitem"]/descendant::a'.</msg>
+<arg>xpath=//div[@role="listitem"]/descendant::a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-30T16:14:06.519885" elapsed="0.227617"/>
+</kw>
+<kw name="Switch Window" owner="SeleniumLibrary">
+<arg>New</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" start="2026-03-30T16:14:06.747974" elapsed="0.023858"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-30T16:14:09.772955" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-30T16:14:06.772141" elapsed="3.000951"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-03-30T16:14:09.899761" level="INFO">Current page contains text 'Woschmann Diamond Car Android SystemTouch Screen 10.1 Inch|TS30|With Fan|4GB/64GB|4th Gen|4Core|QLED Display|GPS&amp;Bluetooth|WiFi&amp;FM|SteeringControl|AHD Camera Included(Wireless Android Auto &amp; Car Play)'.</msg>
+<arg>${product_name}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-03-30T16:14:09.773474" elapsed="0.126463"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2026-03-30T16:14:09.938016" level="INFO">${product_price} = 7,499</msg>
+<var>${product_price}</var>
+<arg>xpath=//div[@class="a-section a-spacing-none aok-align-center aok-relative apex-core-price-identifier"]/descendant::span[@class="a-price-whole"]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-30T16:14:09.900395" elapsed="0.037677"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2026-03-30T16:14:09.961945" level="INFO">${discount_percent} = -76%</msg>
+<var>${discount_percent}</var>
+<arg>xpath=//div[@class="a-section a-spacing-none aok-align-center aok-relative apex-core-price-identifier"]/descendant::span[@class="a-size-large a-color-price savingPriceOverride aok-align-center reinventPriceSavingsPercentageMargin savingsPercentage apex-savings-percentage"]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-30T16:14:09.938400" elapsed="0.023587"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2026-03-30T16:14:09.993099" level="INFO">${actual_price} = ₹31,000</msg>
+<var>${actual_price}</var>
+<arg>xpath=//div[@class="a-section a-spacing-small aok-align-center"]/descendant::span[@class="a-price a-text-price apex-basisprice-value"]/span[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-30T16:14:09.962250" elapsed="0.030896"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Product price is: ${product_price}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-03-30T16:14:09.993524" elapsed="0.000696"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Discount percent is: ${discount_percent}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-03-30T16:14:09.994678" elapsed="0.000467"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Actual price is: ${actual_price}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-03-30T16:14:09.995502" elapsed="0.000558"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>id=add-to-cart-button</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-03-30T16:14:09.996361" elapsed="0.355337"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-03-30T16:14:10.352346" level="INFO">Clicking element 'id=add-to-cart-button'.</msg>
+<arg>id=add-to-cart-button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-30T16:14:10.352119" elapsed="0.226060"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-30T16:14:20.579965" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-30T16:14:10.578805" elapsed="10.001421"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-03-30T16:14:20.581192" level="INFO">Clicking element 'xpath=//a[contains(@href,"nav_cart")]'.</msg>
+<arg>xpath=//a[contains(@href,"nav_cart")]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-30T16:14:20.580858" elapsed="1.461178"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-30T16:14:24.043940" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-30T16:14:22.042788" elapsed="2.001610"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-03-30T16:14:24.077680" level="INFO">Current page contains text 'Woschmann Diamond Car Android SystemTouch Screen 10.1 Inch|TS30|With Fan|4GB/64GB|4th Gen|4Core|QLED Display|GPS&amp;Bluetooth|WiFi&amp;FM|SteeringControl|AHD Camera Included(Wireless Android Auto &amp; Car Play)'.</msg>
+<arg>${product_name}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-03-30T16:14:24.044951" elapsed="0.032905"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-30T16:14:24.078800" elapsed="2.507106"/>
+</kw>
+<status status="PASS" start="2026-03-30T16:13:55.670868" elapsed="30.915841"/>
+</test>
+<status status="PASS" start="2026-03-30T16:13:55.483472" elapsed="31.104470"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Task3" id="s1" pass="1" fail="0" skip="0">Task3</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
