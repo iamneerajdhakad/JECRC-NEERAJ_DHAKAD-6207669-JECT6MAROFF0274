@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.13.3 on win32)" generated="2026-04-02T10:47:03.123687" rpa="false" schemaversion="5">
+<suite id="s1" name="Log" source="C:\Python\Testing\Selenium_Framework\02-April-2026\log.robot">
+<test id="s1-t1" name="Logging Demo" line="5">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Hello</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-04-02T10:47:03.299283" elapsed="0.000482"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-04-02T10:47:03.300374" level="INFO">Info Message</msg>
+<arg>Info Message</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-04-02T10:47:03.300070" elapsed="0.000373"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Debug Message</arg>
+<arg>DEBUG</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-04-02T10:47:03.300700" elapsed="0.000503"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-04-02T10:47:03.301755" level="WARN">Warn Message</msg>
+<arg>Warn Message</arg>
+<arg>WARN</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-04-02T10:47:03.301467" elapsed="0.000645"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-04-02T10:47:03.302684" level="ERROR">Error Message</msg>
+<arg>Error Message</arg>
+<arg>ERROR</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-04-02T10:47:03.302404" elapsed="0.000639"/>
+</kw>
+<status status="PASS" start="2026-04-02T10:47:03.298230" elapsed="0.005092"/>
+</test>
+<status status="PASS" start="2026-04-02T10:47:03.125033" elapsed="0.178912"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Log" id="s1" pass="1" fail="0" skip="0">Log</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-04-02T10:47:03.301755" level="WARN">Warn Message</msg>
+<msg time="2026-04-02T10:47:03.302684" level="ERROR">Error Message</msg>
+</errors>
+</robot>
